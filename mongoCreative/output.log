@@ -1,0 +1,7 @@
+nohup: ignoring input
+
+> mongoCreative@0.0.0 start /opt/bitnami/apache2/htdocs/mongoCreative
+> node ./bin/www "node" "./bin/www"
+
+Connected to Mongo Database
+(node:15929) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html

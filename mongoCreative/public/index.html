@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="javascripts/client.js"></script>
+   <script src="javascripts/particle.js"></script>
+
+</head>
+</body>
+<h1 id="title">Bouncy Ball Art</h1>
+<canvas id="canvas" width="700" height="700"></canvas><br>
+
+
+
+    <div id="colorDiv">
+      <table id="colorTable">
+     <tr> <td><p class="colorType">Ball Color:  <input type="color" class="colors"  id="color"> </p></td>
+      <td><p class="colorType">Left Collision Color:  <input type="color" value="#00ff0c" class="colors" id="colorLeft"> </p></td>
+     <tr> <td><p class="colorType">Top Collision Color:  <input type="color" value="#9800ff" class="colors" id="colorTop"> </p></td>
+      <td><p class="colorType">Right Collision Color:  <input type="color" value="#ff0000" class="colors" id="colorRight"> </p></td>
+     <tr> <td><p class="colorType">Bottom Collision Color:  <input type="color" value="#0000ff" class="colors" id="colorBottom"> </p></td>
+      <td><p class="colorType">Background Color:  <input type="color" value="#8d8d8d" class="colors" id="colorBackground"> </p></td>
+      </table>
+    </div>
+
+
+  <table>
+    <tr><td><button class="tableButtons" id="clear">Clear Canvas </button></td>
+    <td><button class="tableButtons" id="reset">Reset Balls </button></td></tr>
+    <tr>
+    <td><button class="tableButtons" id="trails">Trails </button></td>
+    <td><button class="tableButtons" id="randomizeColors">Random Colors </button></td>
+  </tr>
+  </table>
+
+  <div id="gravitySec">
+    <p id="gravityVal"></p>
+  <input type="range" min="-20" value="10" max="20" id="gravitySlide" style="width:250px;"><br>
+<input id="verticalButton" class="velButton" type="submit" value="Random Vertical">
+  </div>
+
+  <div id="horrizonalForce">
+    <p id="horrizontalVal"></p>
+  <input type="range" min="-20" value="0" max="20" id="horrizontalSlide" style="width:250px;"><br>
+<input id="horrizontalButton" class="velButton" type="submit" value="Random Horrizontal">
+  </div>
+
+  <div id="collisionForce">
+    <p id="collisionVal"></p>
+  <input type="range" min="-80" value="40" max="80" id="collisionSlide" style="width:250px;"><br>
+<input id="collisionButton" class="velButton" type="submit" value="Random Collision">
+  </div>
+  <div id="snapShotDiv">
+    <button id="closeSnap"> X </button>
+    <a href="" id="download" download><button id="downloadButton">Download Image</button></a>
+    <img src="" id="displayImage">
+    <form onsubmit="database()" id="imageName">
+      <p id="title"> Please Name Your Piece</p>
+      <input type="text" id="name"></br></br>
+      <input id="databaseButton" type="submit" value="Save to Database">
+    </form>
+  </div>
+<div id="picButtons">
+<table>   
+<td> <div id="snapShot"</div><td>
+
+   <td> <div id="showAll"></div><td>
+</table>
+</div>
+  <div id="displayAllImages">
+    <button id="closeImagePanel"> X </button>
+    <div id="imageBox"></div>
+  </div>
+  <audio src="sounds/1.mp3" id = "audio0" >
+    <audio src="sounds/2.mp3" id = "audio1" >
+      <audio src="sounds/3.mp3" id = "audio2" >
+        <audio src="sounds/4.mp3" id = "audio3" >
+          <audio src="sounds/5.mp3" id = "audio4" >
+            <audio src="sounds/6.mp3" id = "audio5">
+              <audio src="sounds/6.mp3" id = "audio6">
+
+</body>
+</html>

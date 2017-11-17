@@ -1,0 +1,229 @@
+body {
+  padding:0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(71, 69, 71);
+  overflow-x: hidden;
+}
+
+a {
+  color: #00B7FF;
+}
+.colors{
+ width:20px;
+ height: 15px;
+ border-width:thin;
+}
+
+#title{
+  text-align: center;
+
+  text-shadow: 1px 1px 2px black;
+}
+
+
+
+canvas{
+  border:1px solid #000000;
+  padding: 0;
+  margin: auto;
+  display: block;
+  /*max-height: 100%;*/
+  cursor:crosshair;
+  position: absolute;
+  top: -40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 7px 7px 10px black, -7px -7px 10px black, -7px 7px 10px black, 7px -7px 10px black;
+
+
+}
+#gravityVal{
+  padding-left: 80px;
+  font-size: 20px;
+  color:white;
+  text-shadow: 1px 1px 2px black;
+}
+#horrizontalVal{
+  padding-left: 50px;
+  font-size: 20px;
+  color:white;
+  text-shadow: 1px 1px 2px black;
+}
+#collisionVal{
+  padding-left: 80px;
+  font-size: 20px;
+  color:white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.tableButtons{
+  margin-top: 40px;
+  background-color: rgba(173, 173, 173, 0.65);
+  width:100%;
+}
+
+.velButton{
+  margin-top: 5px;
+  margin-bottom: 40px;
+  background-color: rgba(173, 173, 173, 0.65);
+  width:250px;
+}
+#snapShot{
+width:100px;
+height:100px;
+background-image: url('../images/camera.png');
+  background-size: 100px 100px;
+cursor:pointer;
+}
+#showAll{
+float:right;	
+width:100px;
+height:100px;
+background-image: url('../images/gallery.png');
+  background-size: 100px 100px;
+cursor:pointer;
+}
+#snapShot:hover, #showAll:hover{
+background-color:rgb(100,100,100);
+}
+#picButtons{
+position:absolute;
+left:5px;
+bottom:5px;
+}
+
+#snapShotDiv{
+  background-color: rgba(84, 84, 84, 0.87);
+display: none;
+position:absolute;
+overflow-y:hidden;
+overflow-x:hidden;
+width:100% !important;
+height:100%;
+top:0;
+left:0;
+z-index: 100 !important;
+}
+
+#displayAllImages{
+background-color: rgba(189, 189, 189, 0.87);
+display: none;
+position:absolute;
+
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index: 100 !important;
+overflow-y: scroll;
+
+}
+#imageBox{
+  height: 105px;
+  margin: 0 auto;
+  text-align: center;
+
+width: 80%;
+
+}
+.logo-image {
+  vertical-align: middle;
+  padding: 13px;
+  display:inline-block;
+  min-width: 200px;
+  max-width: 300px;
+
+}
+#images{
+  box-shadow: 3px 3px 5px black, -3px -3px 5px black, -3px 3px 5px black, 3px -3px 5px black;
+}
+
+.logo-image img {
+  max-width: 100%;
+}
+
+#displayImage{
+  box-shadow: 7px 7px 10px black, -7px -7px 10px black, -7px 7px 10px black, 7px -7px 10px black;
+ margin: 0 auto;
+ height: 100%;
+ position: absolute;
+ right:0;
+ left:0;
+ width:auto;
+}
+#imageName{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 20px;
+  border-radius: 10px;
+  position: absolute;
+  margin:0 auto;
+  width:20%;
+  left:40%;
+  text-align: center;
+  box-shadow: 2px 2px 4px black;
+
+}
+#title{
+  color:white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 30px;
+}
+#downloadButton{
+  width:200px;
+  height:80px;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px grey;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 10px;
+  cursor:pointer;
+}
+#closeSnap{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height:30px;
+  width:30px;
+  border-radius: 0px;
+    cursor:pointer;
+  background-color: rgba(255, 255, 255, 0.4);;
+}
+#closeImagePanel{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height:30px;
+  width:30px;
+  border-radius: 0px;
+  cursor:pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#description{
+  padding: none;
+  margin: 0;
+  border: 0;
+  text-align: center;
+  color:rgb(2, 0, 187);
+  text-shadow: 1px 1px 2px grey;
+}
+#download{
+
+  position: absolute;
+  margin: 0 auto;
+  width:100%;
+  text-align: center;
+
+  bottom:50px;
+  z-index: 100 !important;
+}
+.colorType{
+  font-size: 10px;
+  color:white;
+  text-shadow: 1px 1px 2px black;
+  width:100%;
+}
+#colorDiv{
+  position:absolute;
+  top:0;
+  left:0;
+}
